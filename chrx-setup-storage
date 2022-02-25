@@ -72,7 +72,7 @@ else
 	EOF
       echo_info "Enter size in GB [${rec_os_size}]: \c"
       prompt_if_interactive
-      os_size=${PROMPT_RESPONSE}
+      os_size=2
       [ -z "${os_size}" ] && os_size=${rec_os_size}
       os_size_test=`echo ${os_size} | grep "^[0-9][0-9]*$"`
       if [ -z "${os_size_test}" ]; then
